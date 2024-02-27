@@ -40,7 +40,7 @@
   }
   .Group4 div {
     position: absolute;
-    font-family: Futura PT;
+    font-family: 'Futura PT';
     font-size: 16px;
     font-weight: 500;
     color: white;
@@ -79,7 +79,7 @@
     top: 295px;
     left: 641px;
     font-size: 30px;
-    font-family: Futura PT;
+    font-family: 'Futura PT';
     font-weight: 300;
     color: #343434;
     word-wrap: break-word;
@@ -100,7 +100,7 @@
   .ButtonName {
     color: white;
     font-size: 27.94px;
-    font-family: Futura PT;
+    font-family: 'Futura PT';
     font-weight: 400;
     line-height: 44.70px;
     word-wrap: break-word;
@@ -139,7 +139,7 @@
     top: 417px;
     left: 641px;
     font-size: 30px;
-    font-family: Futura PT;
+    font-family: 'Futura PT';
     font-weight: 300;
     color: #343434;
     word-wrap: break-word;
@@ -206,7 +206,7 @@
   </div>
   <img class="Avilogo" src="avilogo-new.png" />
   <div class="Dataprocessing">I agree to the processing of personal data*</div>
-  <div class="ButtonPrimary">
+  <div class="ButtonPrimary" id="nextButton3">
     <div class="ButtonName">Next</div>
   </div>
   <div class="Dropdown">
@@ -228,6 +228,11 @@
     <div class="Ellipse4"></div>
   </div>
 </div>
-
+<script>
+    document.getElementById('nextButton3').addEventListener('click', function() {
+        // Redirect to the new page when the Next button is clicked
+        window.location.href = "webtoleadThankYouPage.html";
+    });
+</script>
 </body>
 </html>
